@@ -1,4 +1,4 @@
-# Contributing to seg-final
+# Contributing to saas-security-end
 
 Thanks for considering a contribution. This skill exists because real SaaS launches kept tripping over the same boring security failures — every PR that catches one more class of failure makes the next launch safer for someone else.
 
@@ -39,7 +39,7 @@ Categories we don't cover yet but would accept: **GraphQL security** (introspect
 1. **Open an issue first** for non-trivial changes (new modules, stack adapters, structural rewrites). This avoids you doing work that won't land.
 2. **Fork** the repo, branch from `main`, and open a PR back to `main`. One logical change per PR.
 3. **Keep prompts in the original language they were written in.** Most existing prompts are in PT-BR — leave them that way. New modules can be in EN or PT, whichever is more natural for the author.
-4. **Test the skill locally before submitting.** Clone your fork into `~/.claude/skills/seg_final`, restart Claude Code, and run `/seg_final` against a sample project. If your change touches an existing module, verify the module still classifies correctly.
+4. **Test the skill locally before submitting.** Clone your fork into `~/.claude/skills/saas-security-end`, restart Claude Code, and run `/saas-security-end` against a sample project. If your change touches an existing module, verify the module still classifies correctly.
 
 ---
 

@@ -1,9 +1,9 @@
 ---
-name: seg_final
+name: saas-security-end
 description: Sprint de Seguranca Final para qualquer SaaS — auditoria completa de banco (RLS), autenticacao, pagamentos, frontend, infraestrutura, LGPD e testes manuais pre-lancamento. Stack: React + Supabase + Gateway de Pagamento + Vercel.
 ---
 
-# /seg_final — Sprint de Seguranca Final (Pre-Lancamento)
+# /saas-security-end — Sprint de Seguranca Final (Pre-Lancamento)
 
 Executa a auditoria de seguranca completa para preparar um SaaS para producao.
 
@@ -16,7 +16,7 @@ Executa a auditoria de seguranca completa para preparar um SaaS para producao.
 
 ## Como funciona
 
-1. Leia o arquivo `Sprint_seg_final.md` neste mesmo diretorio
+1. Leia o arquivo `playbook.md` neste mesmo diretorio
 2. Identifique qual projeto esta sendo auditado (diretorio atual)
 3. Execute os 7 modulos em ordem:
    - Modulo 1: Banco de Dados (RLS) — CRITICO
@@ -30,7 +30,7 @@ Executa a auditoria de seguranca completa para preparar um SaaS para producao.
 ## Instrucoes de execucao
 
 ### Step 1: Ler o documento base
-Leia `~/.claude/skills/seg_final/Sprint_seg_final.md` por completo.
+Leia `~/.claude/skills/saas-security-end/playbook.md` por completo.
 
 ### Step 2: Mapear o projeto
 Identifique no projeto atual:

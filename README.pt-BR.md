@@ -1,4 +1,4 @@
-# 🛡️ seg-final — Sprint de Segurança SaaS (Pré-Launch)
+# 🛡️ saas-security-end — Sprint de Segurança SaaS (Pré-Launch)
 
 > **Uma skill do Claude Code testada em produção que audita a segurança de qualquer SaaS antes de subir pra produção.**
 > Cobre banco de dados (RLS), autenticação, pagamentos, frontend, infraestrutura, conformidade com LGPD e testes manuais.
@@ -9,7 +9,7 @@
 
 ## O que faz
 
-`/seg-final` executa uma **auditoria de segurança estruturada em 7 módulos** no seu projeto SaaS, desenhada pra pegar os problemas que realmente matam lançamento de produto:
+`/saas-security-end` executa uma **auditoria de segurança estruturada em 7 módulos** no seu projeto SaaS, desenhada pra pegar os problemas que realmente matam lançamento de produto:
 
 | Módulo | Foco | Prioridade |
 |---|---|---|
@@ -45,18 +45,18 @@ Funciona em qualquer projeto que se encaixe nesse formato. Fácil de adaptar pra
 
 ```bash
 # macOS / Linux
-git clone https://github.com/leonardoborges13/seg-final.git ~/.claude/skills/seg_final
+git clone https://github.com/leonardoborges13/saas-security-end.git ~/.claude/skills/saas-security-end
 
 # Windows (PowerShell)
-git clone https://github.com/leonardoborges13/seg-final.git $env:USERPROFILE\.claude\skills\seg_final
+git clone https://github.com/leonardoborges13/saas-security-end.git $env:USERPROFILE\.claude\skills\saas-security-end
 ```
 
-É isso. Reinicia o Claude Code e digita `/seg_final` pra invocar.
+É isso. Reinicia o Claude Code e digita `/saas-security-end` pra invocar.
 
 ### Opção 2 — Instalação manual
 
-1. Baixe `SKILL.md` e `Sprint_seg_final.md` deste repo
-2. Crie a pasta `~/.claude/skills/seg_final/`
+1. Baixe `SKILL.md` e `playbook.md` deste repo
+2. Crie a pasta `~/.claude/skills/saas-security-end/`
 3. Coloque os dois arquivos dentro
 4. Reinicie o Claude Code
 
@@ -65,10 +65,10 @@ git clone https://github.com/leonardoborges13/seg-final.git $env:USERPROFILE\.cl
 Se quiser a skill em apenas um projeto:
 
 ```bash
-mkdir -p .claude/skills/seg_final
-curl -O https://raw.githubusercontent.com/leonardoborges13/seg-final/main/SKILL.md
-curl -O https://raw.githubusercontent.com/leonardoborges13/seg-final/main/Sprint_seg_final.md
-mv SKILL.md Sprint_seg_final.md .claude/skills/seg_final/
+mkdir -p .claude/skills/saas-security-end
+curl -O https://raw.githubusercontent.com/leonardoborges13/saas-security-end/main/SKILL.md
+curl -O https://raw.githubusercontent.com/leonardoborges13/saas-security-end/main/playbook.md
+mv SKILL.md playbook.md .claude/skills/saas-security-end/
 ```
 
 ---
@@ -78,12 +78,12 @@ mv SKILL.md Sprint_seg_final.md .claude/skills/seg_final/
 Dentro de qualquer diretório de projeto no Claude Code:
 
 ```
-/seg_final
+/saas-security-end
 ```
 
 O Claude vai:
 
-1. **Ler o playbook** (`Sprint_seg_final.md`)
+1. **Ler o playbook** (`playbook.md`)
 2. **Mapear o projeto** — descobre tabelas, rotas, Edge Functions, env vars, plataforma de deploy, domínios
 3. **Executar todos os 7 módulos em ordem**, adaptando cada prompt ao seu código real
 4. **Corrigir automaticamente o que dá** e gerar SQL/passos manuais pro resto
