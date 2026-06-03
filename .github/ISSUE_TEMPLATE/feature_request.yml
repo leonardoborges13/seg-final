@@ -1,0 +1,51 @@
+name: "✨ Feature request"
+description: "Suggest a new module, stack adapter, or compliance addition"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Sugerir uma nova funcionalidade
+
+        Use este formulário para propor novos módulos de auditoria, adapters para outras stacks, módulos de compliance (HIPAA, PCI-DSS, GDPR, etc.) ou integração com novos gateways de pagamento.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type"
+      description: "Que tipo de contribuição você está propondo?"
+      options:
+        - "Stack adapter (ex: Next.js + Firebase, Remix + Neon)"
+        - "Compliance module (ex: HIPAA, PCI-DSS, GDPR)"
+        - "Gateway module (ex: Stripe, Mercado Pago, PagSeguro)"
+        - "New audit module (nova dimensão de auditoria)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem does this solve?"
+      description: "Qual gap atual da skill esta proposta resolve? Quem se beneficia?"
+      placeholder: "Hoje a skill não cobre X, o que força usuários com stack Y a..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: "Proposed approach"
+      description: "Como você imagina que isso seria implementado? (opcional)"
+      placeholder: "Adicionar um módulo 8 com checks específicos para..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "Examples / references"
+      description: "Links para docs oficiais, OWASP cheatsheets, blog posts, ou exemplos de implementação. (opcional)"
+      placeholder: "- https://owasp.org/...\n- https://stripe.com/docs/..."
+    validations:
+      required: false

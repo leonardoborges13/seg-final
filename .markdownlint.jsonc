@@ -1,0 +1,16 @@
+{
+  // markdownlint config for seg-final (Claude Code skill)
+  // Docs: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+  // Enable all default rules, then override below
+  "default": true,
+
+  // MD013 — line length: disabled (prompts and skill instructions are naturally long)
+  "MD013": false,
+
+  // MD033 — inline HTML: disabled (emojis and HTML in headers are sometimes needed)
+  "MD033": false,
+
+  // MD041 — first line must be a top-level heading: enabled
+  "MD041": true
+}

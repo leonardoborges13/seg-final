@@ -1,0 +1,74 @@
+name: "🐛 Bug or incorrect guidance"
+description: "Report a technical error in the skill's prompts, an outdated check, or a misleading recommendation"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before opening this issue
+
+        **Para vulnerabilidades de segurança críticas, veja [SECURITY.md](../../security/policy) — não abrir issue pública.**
+
+        Use este formulário apenas para reportar erros técnicos nos prompts da skill, checks desatualizados, ou recomendações enganosas.
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: "Which module?"
+      description: "Qual módulo da skill contém o bug ou a orientação incorreta?"
+      options:
+        - "Module 1 — Database (RLS, policies, schema)"
+        - "Module 2 — Auth (sessions, tokens, MFA)"
+        - "Module 3 — Payments (gateway, webhooks, idempotency)"
+        - "Module 4 — Frontend (XSS, CSRF, secrets in bundle)"
+        - "Module 5 — Infrastructure (Vercel, headers, env vars)"
+        - "Module 6 — LGPD (consent, retention, DSR)"
+        - "Module 7 — Manual Tests (pre-launch checklist)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_prompt
+    attributes:
+      label: "What does the prompt currently say?"
+      description: "Cole o trecho exato do prompt / check / recomendação que está com problema."
+      placeholder: "Cole aqui o conteúdo atual..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats_wrong
+    attributes:
+      label: "What's wrong with it?"
+      description: "Descreva o problema: está incorreto, desatualizado, ambíguo, gera falso positivo, etc."
+      placeholder: "Ex: A recomendação de usar X não funciona mais na versão Y do Supabase porque..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_fix
+    attributes:
+      label: "What should it say instead?"
+      description: "Sua sugestão de correção. Quanto mais específico, melhor."
+      placeholder: "Proposta de novo texto / check / recomendação..."
+    validations:
+      required: true
+
+  - type: input
+    id: stack
+    attributes:
+      label: "Your stack"
+      description: "Stack em que o bug foi observado."
+      placeholder: "Ex: React + Supabase + Stripe + Vercel"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Confirmation"
+      options:
+        - label: "I've read CONTRIBUTING.md"
+          required: true
