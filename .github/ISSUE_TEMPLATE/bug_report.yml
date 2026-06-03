@@ -7,9 +7,7 @@ body:
       value: |
         ## Before opening this issue
 
-        **Para vulnerabilidades de segurança críticas, veja [SECURITY.md](../../security/policy) — não abrir issue pública.**
-
-        Use este formulário apenas para reportar erros técnicos nos prompts da skill, checks desatualizados, ou recomendações enganosas.
+        Use este formulário para reportar erros técnicos nos prompts da skill, checks desatualizados, ou recomendações enganosas.
 
   - type: dropdown
     id: module

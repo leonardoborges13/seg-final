@@ -181,7 +181,7 @@ Open an issue first for big changes so we can align on scope.
 
 ## Credits
 
-Built by [Leonardo Borges](https://github.com/leonardoborges13) — engineer behind several Brazilian SaaS launches (Calc360 Pro, Jornada do Escolhido, Denner Santos Visagismo, BrokerMKT Analytics, Bruno Marques Visagismo).
+Built by [Leonardo Borges](https://github.com/leonardoborges13).
 
 Forged from real pre-launch audits. Each module exists because something went wrong on a real project.
 

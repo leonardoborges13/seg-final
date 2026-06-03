@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+### Removed
+
+- `SECURITY.md` and explicit project list from README credits for privacy.
+
 ## [1.0.0] - 2026-06-03
 
 ### Added

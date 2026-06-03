@@ -181,7 +181,7 @@ Abra uma issue antes de mudanças grandes pra a gente alinhar escopo.
 
 ## Créditos
 
-Construído por [Leonardo Borges](https://github.com/leonardoborges13) — engenheiro por trás de vários lançamentos de SaaS brasileiros (Calc360 Pro, Jornada do Escolhido, Denner Santos Visagismo, BrokerMKT Analytics, Bruno Marques Visagismo).
+Construído por [Leonardo Borges](https://github.com/leonardoborges13).
 
 Forjado a partir de auditorias reais pré-launch. Cada módulo existe porque algo deu errado num projeto real.
 
